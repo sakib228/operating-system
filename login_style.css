@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------- shared style -------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.open-sans-bd {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(foodback.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container {
+  width: 450px;
+  background-color: rgb(229, 53, 165);
+  color: #fff;
+  border-radius: 20px;
+  padding: 30px 35px 35px 20px;
+  border: 2px solid rgba(192, 186, 186, 0.648);
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+.container h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+}
+.container .input_box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  /* background-color: salmon; */
+  margin: 30px 0;
+}
+.input_box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 40px;
+  border: 2px solid rgb(81, 77, 77);
+  padding: 20px 35px 20px 20px;
+  font-size: 1rem;
+}
+.input_box input::placeholder {
+  color: #fff;
+}
+.input_box i {
+  position: absolute;
+  right: 20px;
+  top: 65px;
+  transform: translateY(-50px);
+  font-size: 20px;
+  color: #333;
+}
+
+.container .remember_forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: -15px 0 15px;
+}
+.remember_forgot label input {
+  margin-right: 2px;
+  margin-bottom: 4px;
+  accent-color: #fff;
+}
+.remember_forgot a {
+  text-decoration: none;
+  color: #fff;
+}
+.remember_forgot a:hover {
+  text-decoration: underline;
+  color: black;
+  /* transform: scale(1.1); */
+  transition: all 0.2s linear;
+}
+.btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  box-shadow: 0 0 10% rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+.register_link {
+  text-align: center;
+  font-size: 1rem;
+  margin: 20px 0 15px;
+}
+.register_link p a {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register_link p a:hover {
+  text-decoration: underline;
+  color: #333;
+  transition: all 0.2s linear;
+}
