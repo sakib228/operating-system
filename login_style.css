@@ -21,10 +21,12 @@
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  padding: 0 16px;
 }
 
 .container {
-  width: 450px;
+  max-width: 450px;
+  /* width: 100%; */
   background-color: rgb(229, 53, 165);
   color: #fff;
   border-radius: 20px;
@@ -32,6 +34,8 @@
   border: 2px solid rgba(192, 186, 186, 0.648);
   background: transparent;
   backdrop-filter: blur(10px);
+  margin-inline: 16px;
+  flex-grow: 1;
 }
 .container h1 {
   font-size: 3rem;
@@ -53,20 +57,33 @@
   outline: none;
   background: transparent;
   border-radius: 40px;
-  border: 2px solid rgb(81, 77, 77);
+  border: 2px solid rgb(123, 108, 108);
   padding: 20px 35px 20px 20px;
   font-size: 1rem;
+  color: #b69999;
 }
+/* ------- input box hover --------- */
+
+.input_box input:hover {
+  color: #a19898;
+}
+
 .input_box input::placeholder {
   color: #fff;
 }
+/* .input_box input:hover::placeholder{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    transform-origin: center;
+} */
+
 .input_box i {
   position: absolute;
   right: 20px;
   top: 65px;
   transform: translateY(-50px);
   font-size: 20px;
-  color: #333;
+  color: #a8a6a6;
 }
 
 .container .remember_forgot {
@@ -74,6 +91,9 @@
   justify-content: space-between;
   font-size: 0.9rem;
   margin: -15px 0 15px;
+}
+.remember_forgot {
+  padding: 15px 0 15px 0;
 }
 .remember_forgot label input {
   margin-right: 2px;
@@ -86,7 +106,7 @@
 }
 .remember_forgot a:hover {
   text-decoration: underline;
-  color: black;
+  color: royalblue;
   /* transform: scale(1.1); */
   transition: all 0.2s linear;
 }
@@ -102,6 +122,14 @@
   color: #333;
   font-weight: 600;
 }
+/* --------------- button hover section ----------------  */
+
+.btn:hover {
+  color: rgb(244, 244, 247);
+  background-color: rgb(52, 52, 50);
+  transition: all 0.2s ease;
+}
+
 .register_link {
   text-align: center;
   font-size: 1rem;
@@ -112,9 +140,32 @@
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  padding-left: 10px;
 }
 .register_link p a:hover {
   text-decoration: underline;
-  color: #333;
+  color: royalblue;
   transition: all 0.2s linear;
+}
+.register_link p:hover {
+  color: royalblue;
+  transition: all 0.2s linear;
+}
+/* -------- responsive -------- */
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 450px;
+    width: 100%;
+
+    /* margin: 40px; */
+    margin: 0 auto;
+  }
+  .remember_forgot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0 15px 0;
+    gap: 15px;
+  }
 }
