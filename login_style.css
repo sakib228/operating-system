@@ -21,11 +21,18 @@
   background-position: center;
   background-size: cover;
   min-height: 100vh;
-  padding: 0 16px;
+  padding: 0 20px;
 }
-
+.log_in #h1_o {
+  color: #ca760f;
+  font-style: italic;
+}
+.log_in h1 i {
+  color: #ca760f;
+}
+/* ------------------------ main container ------------------------------------- */
 .container {
-  max-width: 450px;
+  max-width: 400px;
   /* width: 100%; */
   background-color: rgb(229, 53, 165);
   color: #fff;
