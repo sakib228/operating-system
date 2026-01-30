@@ -176,7 +176,7 @@
     padding: 10px 30px;
   }
   .hero_section .hero_img {
-    /* max-width: 100%; */
+    max-width: 100%;
     margin-top: 20px;
   }
   .hero_text h1 {
@@ -215,7 +215,8 @@
   color: white;
   font-weight: 600;
 }
-.hero_sub_btn:hover, .hero_sub_btn1:hover{
+.hero_sub_btn:hover,
+.hero_sub_btn1:hover {
   transition: all 0.3s linear;
   color: black;
   transform: scale(1.1);
@@ -242,5 +243,9 @@
   }
   #show {
     display: none;
+  }
+  .hero_section .hero_img {
+    max-width: 70%;
+    margin-top: 20px;
   }
 }
