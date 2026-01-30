@@ -19,7 +19,7 @@
 .main_header {
   max-width: 1600px;
   margin: 0 auto;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .main_nav {
   max-width: 1600px;
@@ -118,7 +118,38 @@
   gap: 10px;
 }
 
+/* -------------- hero section --------------------- */
+.hero_section {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d3e5ed;
+  padding: 10px 30px;
+}
+.hero_text {
+  color: #394658;
+}
+.hero_text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: normal;
+  padding-bottom: 40px;
+}
+.hero_text p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+.hero_section .hero_img {
+  max-width: 100%;
+}
+
 /* ---------------- media section for phn ------------------ */
+
 @media screen and (max-width: 576px) {
   .nav_head_logo {
     font-size: 2rem;
@@ -134,9 +165,59 @@
   .btn {
     display: none;
   }
+  .hero_section {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d3e5ed;
+    padding: 10px 30px;
+  }
+  .hero_section .hero_img {
+    /* max-width: 100%; */
+    margin-top: 20px;
+  }
+  .hero_text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .hero_text p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
 }
 
-/* media for tab_late  */
+/* hero button section  */
+
+.hero_sub_btn {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #e5088f, #c112a2, #660e71);
+  display: inline-block;
+  color: white;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.hero_sub_btn1 {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #e5088f, #c112a2, #660e71);
+  color: white;
+  font-weight: 600;
+}
+
+/* ---------------- media for tab_late ----------------- */
+
 @media screen and (min-width: 577px) and (max-width: 996px) {
   .nav_head_logo {
     font-size: 2.5rem;
