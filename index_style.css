@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------- shared style here ------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.roboto_body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(175, 255, 255);
+}
+
+/* ------------------ header navigation section ------------------ */
+.main_header {
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100vh;
+}
+.main_nav {
+  max-width: 1600px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(23, 79, 23);
+  padding: 18px;
+  border: none;
+  border-radius: 2px;
+}
+
+/* h1-style  */
+.nav_head_logo {
+  font-size: 3.3rem;
+  font-weight: 700;
+  font-style: oblique;
+}
+.nav_logo h1 a i {
+  color: #62748e;
+}
+.nav_head_logo a {
+  color: #fff;
+  text-decoration: none;
+}
+/* link style  */
+.links {
+  display: flex;
+  gap: 40px;
+}
+.links .lin {
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+}
+.links .lin a {
+  text-decoration: none;
+  color: #bae2f4;
+}
+/* --- nav_ber button section --- */
+.nav_button {
+  display: flex;
+  gap: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.nav_button .btn {
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 2 px 3px 10px black;
+  background: transparent;
+  border: none;
+  background-color: #62748e;
+  color: #d3e5ed;
+  /* background: transparent;
+  backdrop-filter: blur(10px); */
+}
+.hum_icon {
+  display: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+/* ----- nav-ber hover section ----- */
+.nav_logo:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.lin:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+  color: #d2e6f0;
+  cursor: pointer;
+}
+.lin a:hover {
+  color: #d2e6f0;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 0.4s linear;
+  color: #fff;
+  background-color: black;
+  cursor: pointer;
+}
+#show {
+  display: flex;
+  gap: 10px;
+}
+
+/* ---------------- media section for phn ------------------ */
+@media screen and (max-width: 576px) {
+  .nav_head_logo {
+    font-size: 2rem;
+    margin-right: 20px;
+  }
+  .links {
+    display: none;
+  }
+  .hum_icon {
+    display: block;
+    font-size: 1.4rem;
+  }
+  .btn {
+    display: none;
+  }
+}
+
+/* media for tab_late  */
+@media screen and (min-width: 577px) and (max-width: 996px) {
+  .nav_head_logo {
+    font-size: 2.5rem;
+  }
+  .links {
+    margin: 0 20px;
+  }
+  .links a {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .links {
+    display: none;
+  }
+  .hum_icon {
+    display: block;
+  }
+  #show {
+    display: none;
+  }
+}

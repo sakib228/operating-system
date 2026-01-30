@@ -24,11 +24,12 @@
   padding: 0 20px;
 }
 .log_in #h1_o {
-  color: #ca760f;
+  /* color: #ca760f; */
   font-style: italic;
 }
 .log_in h1 i {
   color: #ca760f;
+  font-size: 38px;
 }
 /* ------------------------ main container ------------------------------------- */
 .container {
