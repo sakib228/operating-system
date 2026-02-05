@@ -426,4 +426,11 @@
     margin-left: 50px;
     margin-right: 10px;
   }
+  .footer_details_start {
+    display: flex;
+    flex-direction: column;
+  }
+  .last {
+    margin: 0px 15px 0px 2px;
+  }
 }
