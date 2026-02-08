@@ -36,17 +36,29 @@
   border: none;
   border-radius: 2px;
 }
+.hero_sub_btn1 {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff6b00;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
 
 /* h1-style  */
-.nav_head_logo {
+.nav_head_logo,
+.foot_h1 {
   font-size: 3.3rem;
   font-weight: 700;
   font-style: oblique;
 }
-.nav_logo h1 a i {
+.nav_logo h1 a i,
+.foot_h1 a i {
   color: #62748e;
 }
-.nav_head_logo a {
+.nav_head_logo a,
+.foot_h1 a {
   color: #fff;
   text-decoration: none;
 }
@@ -72,6 +84,9 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+.nav_button a {
+  text-decoration: none;
 }
 .nav_button .btn {
   padding: 12px;
@@ -153,6 +168,14 @@
 }
 
 /* hero button section  */
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+.hero_sub_btn1 a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .hero_sub_btn {
   padding: 12px;
@@ -198,13 +221,13 @@
 }
 .card_container h2 {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-size: 3rem;
   font-weight: 600;
   font-style: oblique;
-  color: rgb(255, 243, 243);
-  text-shadow: 2px 4px 10px rgba(14, 8, 8, 0.5);
+  color: rgb(63, 60, 83);
+  text-shadow: 2px 2px 5px rgba(6, 11, 14, 0.5);
 }
 .card_body {
   width: 350px;
@@ -220,7 +243,7 @@
 }
 .card_body .inf {
   text-align: start;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 25px;
 }
@@ -294,7 +317,7 @@
 /* ----- */
 .footer_details_start {
   display: flex;
-  padding: 50px 20px 20px 30px;
+  padding: 50px 10px 20px 20px;
   justify-content: space-around;
   /* align-items: center; */
 }
@@ -331,7 +354,65 @@
   color: #030303;
   transition: all 0.3s linear;
 }
-
+/*---------- footer main section last part --------- */
+.footer_main {
+  max-width: 1600px;
+  max-height: 100vh;
+  margin: 0 auto;
+  background-color: #c6d1db;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* ---- foot head ----- */
+.foot_h1 {
+  padding: 60px 0 5px 0px;
+}
+.shop {
+  color: #060606;
+  font-weight: 600;
+}
+/* ----- links ----- */
+.contact {
+  display: flex;
+  padding: 30px;
+  gap: 50px;
+  font-size: 1.3rem;
+}
+.contact a {
+  text-decoration: none;
+  color: #282c33;
+  font-weight: 500;
+  font-style: normal;
+}
+.social {
+  font-size: 28px;
+  padding: 10px 0 60px 0;
+}
+.social a {
+  color: #060606;
+}
+.warning {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-bottom: 50px;
+  color: #282c33;
+}
+.foot_header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 60px;
+  margin-left: 0px; */
+  padding-right: 60px;
+}
+.links_foot {
+  display: flex;
+  gap: 40px;
+}
 /* ---------------- media section for phn ------------------ */
 
 @media screen and (max-width: 576px) {
@@ -382,15 +463,21 @@
     flex-direction: column;
     margin: o 20px;
   }
-  .card_head h2 {
-    margin: 0px 10px 0px 10px;
-  }
+
   .footer_details_start {
     display: flex;
     flex-direction: column;
   }
   .last {
-    margin: 0px 15px 0px 2px;
+    margin-right: 15px;
+  }
+  .links {
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -431,6 +518,6 @@
     flex-direction: column;
   }
   .last {
-    margin: 0px 15px 0px 2px;
+    margin-right: 15px;
   }
 }

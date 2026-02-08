@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*------------ share deg inserting ------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+
+.google-sans-body {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* ------------------ start card deg ------------------- */
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(seven.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card_container:hover {
+  box-shadow: 2px 2px 15px rgb(218, 209, 196);
+  transition: all 0.2s linear;
+}
+.card_container {
+  max-width: 400px;
+  min-height: 400px;
+  background-color: rgb(250, 255, 255);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 12px;
+  background: transparent;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.card_container:hover {
+  transform: scale(1.02);
+  transition: all 0.3s linear;
+}
+.card_head {
+  font-size: 2.3rem;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 1px 1px 8px black;
+  padding: 16px 0 20px 16px;
+  border-bottom: 2px solid;
+}
+.card_body {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px 60px;
+}
+.card_body .sign_email,
+.sign_pass {
+  padding: 10px 35px;
+  border-radius: 10px;
+  border: none;
+}
+.btn {
+  padding: 15px 45px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0 40px 30px;
+  background: linear-gradient(
+    45deg,
+    white,
+    rgb(145, 103, 157),
+    #e76bd0,
+    #ffffff
+  );
+  cursor: pointer;
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px 20px;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+}
+.foot a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+/* ----------------- hover section ---------------- */
+
+.card_body .sign_email,
+.sign_pass {
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+}
+.sign_email:hover,
+.sign_pass:hover {
+  transform: scale(1.03);
+  transition: all 0.4s linear;
+  /* cursor: pointer; */
+}
+.btn:hover {
+  transform: scale(1.03);
+  transition: all 0.4s linear;
+  /* cursor: pointer; */
+}
+.foot a:hover {
+  text-decoration: underline;
+  color: blue;
+  text-underline-offset: 6px;
+  transition: all 0.4s linear;
+}
+.color {
+  color: #ffffff;
+}
