@@ -129,3 +129,10 @@
 .color {
   color: #ffffff;
 }
+/* responsive  */
+@media screen and (max-width: 576px) {
+  .card_container {
+    max-width: 325px;
+    margin: 0 10px 0 10px;
+  }
+}

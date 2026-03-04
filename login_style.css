@@ -46,13 +46,13 @@
   margin-inline: 16px;
   flex-grow: 1;
 }
-.container{
+.container {
   box-shadow: 2px 2px 15px black;
   border: none;
 }
-.container:hover{
-   box-shadow: 2px 2px 15px rgb(218, 209, 196);
-   transition: all 0.2s linear;
+.container:hover {
+  box-shadow: 2px 2px 15px rgb(218, 209, 196);
+  transition: all 0.2s linear;
 }
 .container h1 {
   font-size: 3rem;
@@ -179,10 +179,9 @@
 #pass {
   color: #fff;
 }
-.container:hover{
+.container:hover {
   transform: scale(1.015);
   transition: all 0.3s linear;
-
 }
 
 /* -------- responsive -------- */
@@ -190,9 +189,10 @@
   .container {
     max-width: 450px;
     width: 100%;
+    margin: 0 20px 0 20px;
 
     /* margin: 40px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   .remember_forgot {
     display: flex;
